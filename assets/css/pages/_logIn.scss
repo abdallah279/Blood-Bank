@@ -1,0 +1,121 @@
+.login-info{
+    background-color: #fbfbfb;
+    padding-bottom: 30px;
+
+    .content{
+        .img{
+            text-align: center;
+        }
+    }
+    
+    form{
+        margin-top: 30px;
+        padding: 0 60px;
+        text-align: center;
+
+        .form-control{
+            background-color: #fbfbfb;
+            margin-bottom: 18px;
+            border-radius: 5px;
+            padding: 12px 8px;
+            border: 2px solid #eee;
+            font-size: 17px;
+        }
+
+        .labels{
+            margin-bottom: 60px;
+            .remember-me{
+                width: 50%;
+                text-align: start;
+                label{
+                    margin-right: 5px;
+                    font-size: 18px;
+                }
+            }
+            
+            .password{
+                text-align: left;
+                .img{
+                    width: 4%;
+                    display: inline-block;
+                    margin-left: 5px;
+                }
+
+                a{
+                    color: #333;
+                    font-size: 18px;
+                    transition: all .3s ease;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .btns{
+            a{
+                display: inline-block;
+                padding: 10px 0;
+                text-align: center;
+                width: 100%;
+                background-color: #3ab54a;
+                color: #fff;
+                font-size: 20px;
+                border: none;
+            }
+
+            .c-btn{
+                background-color: var(--main-color);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .login-info form{
+        padding: 0;
+
+        .btns{
+            .c-btn{
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .login-info{
+        .section-background{
+            padding: 40px 10px;
+
+            form{
+                padding: 0;
+    
+                .form-control{
+                    margin-bottom: 15px;
+                    padding: 12px 8px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+    .login-info{
+        form{
+            .labels{
+                flex-direction: column;
+
+                .remember-me{
+                    width: 100%;
+                    margin-bottom: 12px;
+                }
+
+                .password{
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

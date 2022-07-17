@@ -1,0 +1,51 @@
+.order-info{
+    background-color: #fbfbfb;
+    padding-bottom: 30px;
+    
+    .content{
+        padding: 20px;
+        border: 1px solid #eee;
+        background-color: #fff;
+
+        .details{
+            .box{
+                margin-bottom: 20px;
+
+                span{
+                    display: inline-block;
+                    color: var(--main-color);
+                    font-size: 18px;
+                    margin: 0;
+                }
+                .title{
+                    width: 100%;
+                    padding: 12px;
+                    background-color: #f4f4f4;
+                }
+
+                .detail{
+                    width: 100%;
+                    padding: 12px;
+                    background-color: #fbfbfb;
+                }
+            }
+            
+            .button{
+                // margin-top: 20px;
+                text-align: center;
+            }
+        }
+
+        .text{
+            border: 1px solid #eee;
+            padding: 20px;
+            margin-top: 30px;
+
+            p{
+                line-height: 1.7;
+                font-size: 18px;
+                color: var(--main-color);
+            }
+        }
+    }
+}

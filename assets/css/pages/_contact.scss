@@ -1,0 +1,100 @@
+.contact-us{
+    background-color: #fbfbfb;
+    padding-bottom: 30px;
+    .box{
+        min-height: 626px;
+        border: 1px solid #eee;
+        background-color: #fff;
+        .header{
+            padding: 14px 0;
+            background-color: var(--main-color);
+            color: #fff;
+            text-align: center;
+            font-size: 22px;
+        }
+    }
+
+    .contact-1{
+        .img{
+            padding: 62px 0;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .content{
+            padding: 25px 15px 20px;
+
+            .info{
+                p{
+                    margin-bottom: 34px;
+                    font-size: 20px;
+                }
+            }
+
+            .social{
+                margin-top: 56px;
+                h3{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: var(--sec-color);
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+
+                .icons{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    img{
+                        width: 50px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    
+    .contact-2{
+        form{
+            padding: 15px;
+
+            .form-control{
+                padding: 12px;
+                margin-bottom: 17px;
+                border-radius: 0;
+                border: 2px solid #eee;
+                color: #eee;
+                font-weight: 600;
+            }
+
+            textarea{
+                resize: none;
+                height: 200px;
+            }
+
+            .submit-btn{
+                width: 100%;
+                padding: 12px 0;
+                text-align: center;
+                border: none;
+                outline: none;
+                background-color: var(--main-color);
+                color: #fff;
+                font-size: 18px;
+                transition: all .3s ease;
+
+                &:hover{
+                    background-color: #0069d9;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .contact-us{
+        .contact-1{
+            margin-bottom: 20px;
+        }
+    }
+}

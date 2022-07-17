@@ -1,0 +1,57 @@
+.protection {
+    background-color: #fbfbfb;
+    padding: 40px 0;
+
+    .title{
+        margin: 30px 0;
+        padding: 12px;
+        background-color: var(--main-color);
+        color: #fff;
+
+        span{
+            font-size: 22px;
+        }
+
+        .icon{
+            width: 47px;
+            height: 47px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all .3s ease;
+            
+            i{
+                font-size: 25px;
+                color: #eee;
+            }
+
+            &:hover{
+                background-color: red;
+
+                i{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .info{
+        p{
+            line-height: 1.7;
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .protection{
+        .title{
+            span{
+                font-size: 18px;
+            }
+        }
+    }
+}
