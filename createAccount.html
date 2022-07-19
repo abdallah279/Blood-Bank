@@ -11,6 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>بنك الدم</title>
@@ -21,8 +22,8 @@
         <div class="row justify-content-between">
           <div class="col-sm-6 col-md-2">
             <ul class="lang">
-              <li class="ar"><a href="#">عربى</a></li>
-              <li class="en"><a href="#">EN</a></li>
+              <li class="ar"><a href="index.html">عربى</a></li>
+              <li class="en"><a href="index-En.html">EN</a></li>
             </ul>
           </div>
           <div class="col-sm-6 col-md-3">
@@ -36,11 +37,11 @@
           <div class="col-sm-12 col-md-6">
             <ul class="email">
               <li>
-                <span>name@name.com</span>
+                <a href="#">name@name.com</a>
                 <i class="fa-regular fa-envelope"></i>
               </li>
               <li>
-                <span>+966506954964</span>
+                <a href="#">+966506954964</a>
                 <i class="fa-solid fa-phone"></i>
               </li>
             </ul>
@@ -68,7 +69,7 @@
                 <a class="nav-link" href="whoUs.html">عن بنك الدم</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">المقالات</a>
+                <a class="nav-link" href="maqal.html">المقالات</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="order.html">طلبات التبرع</a>
@@ -105,31 +106,37 @@
                     <input class="form-control" type="text" placeholder="الاسم" aria-label="default input example">
                     <input class="form-control" type="text" placeholder="البريد الالكترونى" aria-label="default input example">
                     <div class="date">
-                        <input class="form-control" type="text" placeholder="تاريخ الميلاد" aria-label="default input example">
+                        <input class="form-control" id="datepicker" type="text" placeholder="تاريخ الميلاد" aria-label="default input example">
                         <i class="fas fa-calendar-alt"></i>
                     </div>
                     <input class="form-control" type="text" placeholder="فصيله الدم" aria-label="default input example">
-                    <select class="form-control">
+                    <div class="input-icon">
+                      <select class="form-control">
                         <option value="0">المحافظة</option>
                         <option value="1">القاهرة</option>
                         <option value="2">الدقهلية</option>
                         <option value="3">الاسكندية</option>
                         <option value="4">أسوان</option>
                     </select>
-                    <select class="form-control">
+                    <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="input-icon">
+                      <select class="form-control">
                         <option value="0">المدينة</option>
                         <option value="1">القاهرة</option>
                         <option value="2">المنصورة</option>
                         <option value="3">الاسكندرية</option>
                         <option value="4">أسوان</option>
                     </select>
+                    <i class="fa-solid fa-angle-down"></i>
+                    </div>
                     <input class="form-control" type="text" placeholder="رقم الهاتف" aria-label="default input example">
                     <div class="date">
-                        <input class="form-control" type="text" placeholder="أخر تاريخ تبرع" aria-label="default input example">
+                        <input class="form-control" id="datepicker" type="text" placeholder="أخر تاريخ تبرع" aria-label="default input example">
                         <i class="fas fa-calendar-alt"></i>
                     </div>
-                    <input class="form-control" type="text" placeholder="كلمة المرور" aria-label="default input example">
-                    <input class="form-control" type="text" placeholder="تأكيد كلمه المرور" aria-label="default input example">
+                    <input class="form-control" type="password" placeholder="كلمة المرور" aria-label="default input example">
+                    <input class="form-control" type="password" placeholder="تأكيد كلمه المرور" aria-label="default input example">
                     <input class="create-btn" type="submit" value="إنشاء">
                 </form>
             </div>
@@ -170,8 +177,8 @@
             <div class="footer-imgs">
               <h5>متوفر على</h5>
               <div class="imgs">
-                <img src="assets/imgs/google1.png" alt="">
-                <img src="assets/imgs/ios1.png" alt="">
+                <a href="#"><img src="assets/imgs/google1.png" alt=""></a>
+                <a href="#"><img src="assets/imgs/ios1.png" alt=""></a>
               </div>
             </div>
           </div>
@@ -205,5 +212,13 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+             $( "#datepicker" ).datepicker();
+        } );
+    </script>
   </body>
 </html>

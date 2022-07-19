@@ -112,16 +112,16 @@ li{
     .lang{
         padding-right: 0;
         a{
-            color: #afb0b1;
+            color: #fff;
             font-weight: 600;
             transition: all .3s ease;
 
             &:hover{
-                color: black;
+                color: #eee;
             }
         }
         .ar a{
-            color: red;
+            color: rgb(249, 93, 93);
         }
     }
 
@@ -140,9 +140,13 @@ li{
     }
 
     .email{
-        color: #eee;
         justify-content: flex-end;
+
+        a{
+            color: #eee;
+        }
         i{
+            color: #eee;
             margin-right: 8px;
             font-size: 15px;
         }
@@ -367,6 +371,11 @@ li{
         img{
             display: block;
             margin-top: 20px;
+            transition: all .3s ease;
+
+            &:hover{
+                background-color: #eee;
+            }
         }
     }
 }

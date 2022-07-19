@@ -15,6 +15,17 @@
             font-size: 18px;
             font-weight: bold;
         }
+
+        .input-icon{
+            position: relative;
+
+            i{
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                transform: translateY(-50%);
+            }
+        }
         .date{
             position: relative;
 
